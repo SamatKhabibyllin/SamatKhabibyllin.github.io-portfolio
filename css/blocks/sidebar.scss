@@ -1,0 +1,48 @@
+.sidebar{
+    width: rem(220px);
+    @include tablets{
+        width: auto;
+        margin-bottom: rem(40px);
+    }
+}
+.nav{
+    text-align: right;
+    font-size: rem(18px);
+    @include fira(medium);
+}
+.nav-list{
+    @include tablets{
+        display: flex;
+    }
+    @include phones{
+        justify-content: space-around;
+    }
+}
+.nav__item{
+    padding: rem(15px) rem(30px) rem(15px) 0;
+    border-right: rem(6px) solid transparent;
+    @include tablets{
+        padding: 0;
+        border-right: 0;
+        margin-right: rem(25px);
+    }
+    @include phones{
+        margin-right: 0;
+    }
+}
+.nav__item--active{
+    @include fira(bold);
+    border-right: rem(6px) solid $blue;
+    @include tablets{
+        border-right: 0;
+    }
+    .nav__link{
+        color: $blue;
+    }
+}
+.nav__link{
+    color: $black;
+    &:hover{
+        color: $blue;
+    }
+}

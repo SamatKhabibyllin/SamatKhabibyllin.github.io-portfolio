@@ -1,0 +1,33 @@
+.footer{
+    background: rgb(65, 65, 65);
+}
+.footer__container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    @include phones{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.copyright{
+    font-size: rem(14px);
+    color: $grey;
+    @include fira(light);
+    @include tablets{
+        font-size: rem(18px);
+    }
+    @include phones{
+        margin-bottom: rem(15px);
+    }
+}
+.icon-list{
+    display: flex;
+}
+.icon__item{
+    margin-right: rem(10px);
+    &:last-child{
+        margin-right: 0;
+    }
+}

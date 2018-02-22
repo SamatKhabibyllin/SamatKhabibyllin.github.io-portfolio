@@ -1,0 +1,73 @@
+//adjustment vars
+$footer-height: 50px;
+$container-width: 940px;
+$white: #f6f6f6;
+
+html{
+    font-size: rem(16px);
+    @include tablets{
+        font-size: rem(14px);
+    }
+    @include phones{
+        font-size: rem(13px);
+    }
+}
+body, html{
+    width: 100%;
+    height: 100%;
+    background: $white;
+    padding: 0;
+    margin: 0;
+}
+body{
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+}
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container{
+    max-width: $container-width;
+    @include tablets{
+        width: 98%;
+    }
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.wrapper:after{
+    content: "";
+    height: $footer-height;
+    display: block;
+    overflow: hidden;
+    @include phones{
+        height: rem(110px);
+    }
+}
+.footer{
+    height: $footer-height;
+    width: 100%;
+    margin-top: -$footer-height;
+    position: relative;
+    @include phones{
+        height: rem(110px);
+        margin-top: rem(-110px);
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    font-weight: normal;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}

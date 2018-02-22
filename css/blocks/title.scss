@@ -1,0 +1,13 @@
+.about__title{
+    @include phones{
+        text-align: center;
+    }
+}
+.title{
+    font-size: rem(35px);
+    @include fira(bold);
+    color: $black;
+}
+.title_margin_left{
+    margin-left: rem(20px);
+}

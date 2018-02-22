@@ -1,0 +1,35 @@
+.fa-user-secret,.fa-rocket,.fa-briefcase{
+    margin-right: rem(10px);
+}
+.fa-download{
+    margin-right: rem(10px);
+}
+.icon-vk{
+    width: rem(25px);
+    height: rem(25px);
+    fill: $grey;
+    &:hover{
+        fill: rgb(255, 255, 255);
+    }
+    @include tablets{
+        width: rem(35px);
+        height: rem(35px);
+    }
+}
+.icon-gh{
+    width: rem(25px);
+    height: rem(25px);
+    fill: $grey;
+    &:hover{
+        fill: rgb(255, 255, 255);
+    }
+    @include tablets{
+        width: rem(35px);
+        height: rem(35px);
+    }
+}
+.fa-user-secret,.fa-rocket,.fa-briefcase{
+    @include phones{
+        display: none;
+    }
+}

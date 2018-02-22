@@ -1,0 +1,68 @@
+.contacts__dropdown{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    padding: rem(10px) 0 rem(10px) 0;
+    border-radius: rem(10px);
+    top: 100%;
+    right: 50%;
+    margin-right: rem(-155px);
+    border: 1px solid rgb(222, 222, 222);
+    margin-top: rem(15px);
+    @include laptop{
+        right: 0;
+        margin-right: 0;
+    }
+    @include tablets{
+        right: 0;
+        margin-right: 0;
+    }
+    opacity: 0;
+}
+.contacts__dropdown--active{
+    opacity: 1;
+    transition: all .5s;
+}
+.triangle{
+    position: absolute;
+    width: rem(15px);
+    height: rem(15px);
+    border-right: 1px solid rgb(222, 222, 222);
+    border-bottom: 1px solid rgb(222, 222, 222);
+    transform: rotate(225deg);
+    background: rgb(255, 255, 255);
+    top: rem(-8px);
+    left: 50%;
+    margin-right: rem(-10px);
+    @include laptop{
+        left: 70%;
+    }
+    @include tablets{
+        left: 70%;
+    }
+    @include phones{
+        left: 90%;
+    }
+}
+.dropdown__item{
+    border-top: 1px solid rgb(222, 222, 222);
+    padding: 0 rem(20px) 0 rem(20px);
+    height: rem(30px);
+    display: flex;
+    align-items: center;
+    &:first-child{
+        border-top: 0;
+    }
+}
+.contacts__dropdown-link{
+    color: $black;
+    font-size: rem(18px);
+    @include fira(regular);
+    display: flex;
+    align-items: center;
+}
+.fa-envelope,.fa-phone{
+    color: $blue;
+    font-size: rem(18px);
+    margin-right: rem(5px);
+}
+

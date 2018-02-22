@@ -1,0 +1,6 @@
+.page-content{
+    width: rem(720px);
+    @include tablets{
+        width: auto;
+    }
+}

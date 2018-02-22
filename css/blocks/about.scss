@@ -1,0 +1,10 @@
+.about{
+    display: flex;
+    @include tablets{
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include phones{
+        flex-direction: column;
+    }
+}

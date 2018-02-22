@@ -1,0 +1,29 @@
+//vars
+$black: rgb(65, 65, 65);
+$grey: rgb(114, 114, 114);
+$blue: rgb(50, 195, 229);
+$red: rgb(232, 95, 97);
+
+//setups
+@import "_misc/normalize";
+@import "_misc/media";
+@import "_misc/layout";
+@import "_misc/mixin";
+@import "plugins/font-awesome";
+@import "_misc/fonts/fonts";
+
+//blocks
+@import "blocks/header";
+@import "blocks/content";
+@import "blocks/about__container";
+@import "blocks/sidebar";
+@import "blocks/page-content";
+@import "blocks/about";
+@import "blocks/about__left";
+@import "blocks/btns";
+@import "blocks/title";
+@import "blocks/about__desc";
+@import "blocks/footer";
+@import "blocks/icons";
+@import "blocks/portfolio";
+@import "blocks/dropdown";

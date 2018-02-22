@@ -1,0 +1,60 @@
+.header{
+    height: rem(80px);
+    background: rgb(255, 255, 255);
+    box-shadow: (0px rem(1px) rem(3px) 0px rgba(0, 0, 0, 0.2));
+    margin-bottom: rem(30px);
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+    font-size: rem(18px);
+    color: $black;
+    @include fira(regular);
+}
+.header__right{
+    position: relative;
+}
+.user__avatar{
+    width: rem(60px);
+    height: rem(60px);
+    border-radius: 50%;
+    border: rem(2px) solid rgb(190, 190, 190);
+    overflow: hidden;
+}
+.user-pic{
+    max-width: 100%;
+}
+.username{
+    margin-left: rem(20px);
+}
+.contacts{
+    color: $blue;
+    @include fira(medium);
+    font-size: rem(18px);
+    border-bottom: rem(3px) dotted $blue;
+    position: relative;
+    &:hover{
+        color: $red;
+        border-color: $red;
+    }
+    @include phones{
+        display: none;
+    }
+}
+.fa-phone_link{
+    display: none;
+    @include phones{
+        display: inline-block;
+        color: $blue;
+        font-size: rem(40px);
+        cursor: pointer;
+    }
+}
+
+

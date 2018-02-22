@@ -1,0 +1,19 @@
+.btn{
+    width: rem(173px);
+    height: rem(40px);
+    border-radius: rem(20px);
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $red;
+    @include fira(medium);
+    font-size: rem(14px);
+}
+.btn_border-color_red{
+    border-color: $red;
+    &:hover{
+        color: rgb(255, 255, 255);
+        background: $red;
+    }
+}
